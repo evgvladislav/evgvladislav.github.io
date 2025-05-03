@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Экскурсии по Самаре - Откройте город заново!</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+
+      header {
+        background: linear-gradient(
+          135deg,
+          #1e5799 0%,
+          #207cca 51%,
+          #2989d8 100%
+        );
+        color: white;
+        padding: 1rem 0;
+        position: relative;
+      }
+
+      .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo-container {
+        width: 160px;
+        height: 160px;
+        margin-right: 1rem;
+      }
+
+      .logo {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 50%;
+        background-color: white;
+        padding: 5px;
+      }
+
+      .header-text {
+        flex-grow: 1;
+        text-align: center;
+      }
+
+      .container {
+        width: 85%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2.2rem;
+      }
+
+      .tagline {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+      }
+
+      .btn {
+        display: inline-block;
+        background: #ff6b00;
+        color: white;
+        padding: 0.8rem 1.5rem;
+        margin-top: 1rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+
+      .btn:hover {
+        background: #e05d00;
+      }
+
+      .excursion {
+        background: white;
+        margin: 2rem 0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .excursion-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      .excursion-content {
+        padding: 1.5rem;
+      }
+
+      .price {
+        font-size: 1.5rem;
+        color: #ff6b00;
+        font-weight: bold;
+        margin: 1rem 0;
+      }
+
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+        margin-top: 2rem;
+      }
+
+      .benefits {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 2rem 0;
+      }
+
+      .benefit {
+        flex-basis: 30%;
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .header-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .logo-container {
+          margin: 0 auto 1rem;
+        }
+
+        .benefit {
+          flex-basis: 100%;
+        }
+
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-container">
+            <img
+              src="logo.png"
+              alt="Логотип Экскурсии по Самаре"
+              class="logo"
+            />
+          </div>
+          <div class="header-text">
+            <h1>Экскурсии по Самаре</h1>
+            <p class="tagline">Откройте для себя город с новой стороны!</p>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 1rem">
+          <a href="#excursions" class="btn">Выбрать экскурсию</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <section>
+        <h2>Почему стоит выбрать наши экскурсии?</h2>
+        <div class="benefits">
+          <div class="benefit">
+            <h3>Профессиональные гиды</h3>
+            <p>Наши экскурсоводы - настоящие знатоки города с богатым опытом</p>
+          </div>
+          <div class="benefit">
+            <h3>Уникальные маршруты</h3>
+            <p>Мы покажем вам не только популярные, но и малоизвестные места</p>
+          </div>
+          <div class="benefit">
+            <h3>Гибкие условия</h3>
+            <p>Индивидуальные и групповые экскурсии в удобное для вас время</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="excursions">
+        <h2>Популярные экскурсии</h2>
+
+        <div class="excursion">
+          <img
+            src="https://example.com/samara-historica.jpg"
+            alt="Исторический центр Самары"
+            class="excursion-img"
+          />
+          <div class="excursion-content">
+            <h3>Исторический центр Самары</h3>
+            <p>
+              Погрузитесь в атмосферу старой Самары: купеческие особняки,
+              старинные улочки и секреты местных жителей.
+            </p>
+            <p><strong>Длительность:</strong> 2,5 часа</p>
+            <div class="price">1 500 ₽ / чел</div>
+            <a href="#book" class="btn">Забронировать</a>
+          </div>
+        </div>
+
+        <div class="excursion">
+          <img
+            src="https://example.com/volga-view.jpg"
+            alt="Волжские просторы"
+            class="excursion-img"
+          />
+          <div class="excursion-content">
+            <h3>Волжские просторы</h3>
+            <p>
+              Автобусно-пешеходная экскурсия с посещением лучших смотровых
+              площадок города и рассказом о великой реке.
+            </p>
+            <p><strong>Длительность:</strong> 3 часа</p>
+            <div class="price">1 800 ₽ / чел</div>
+            <a href="#book" class="btn">Забронировать</a>
+          </div>
+        </div>
+
+        <div class="excursion">
+          <img
+            src="https://example.com/soviet-samara.jpg"
+            alt="Советская Самара"
+            class="excursion-img"
+          />
+          <div class="excursion-content">
+            <h3>Советская Самара</h3>
+            <p>
+              Узнайте о роли города в советский период, посетите знаковые места
+              и бункер Сталина.
+            </p>
+            <p><strong>Длительность:</strong> 2 часа</p>
+            <div class="price">1 200 ₽ / чел</div>
+            <a href="#book" class="btn">Забронировать</a>
+          </div>
+        </div>
+
+        <div class="excursion">
+          <img
+            src="https://example.com/samara-night.jpg"
+            alt="Самара вечерняя"
+            class="excursion-img"
+          />
+          <div class="excursion-content">
+            <h3>Самара вечерняя</h3>
+            <p>
+              Романтическая прогулка по освещенной набережной с рассказом о
+              городских легендах.
+            </p>
+            <p><strong>Длительность:</strong> 1,5 часа</p>
+            <div class="price">1 000 ₽ / чел</div>
+            <a href="#book" class="btn">Забронировать</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="book">
+        <h2>Забронировать экскурсию</h2>
+        <form>
+          <div style="margin-bottom: 1rem">
+            <label for="name">Ваше имя:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              style="width: 100%; padding: 0.5rem"
+            />
+          </div>
+
+          <div style="margin-bottom: 1rem">
+            <label for="phone">Телефон:</label><br />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              style="width: 100%; padding: 0.5rem"
+            />
+          </div>
+
+          <div style="margin-bottom: 1rem">
+            <label for="excursion">Экскурсия:</label><br />
+            <select
+              id="excursion"
+              name="excursion"
+              style="width: 100%; padding: 0.5rem"
+            >
+              <option value="historical">Исторический центр Самары</option>
+              <option value="volga">Волжские просторы</option>
+              <option value="soviet">Советская Самара</option>
+              <option value="night">Самара вечерняя</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 1rem">
+            <label for="date">Дата:</label><br />
+            <input
+              type="date"
+              id="date"
+              name="date"
+              required
+              style="width: 100%; padding: 0.5rem"
+            />
+          </div>
+
+          <button type="submit" class="btn">Отправить заявку</button>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>© 2023 Экскурсии по Самаре</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+        <p>Email: info@samara-excursions.ru</p>
+      </div>
+    </footer>
+  </body>
+</html>
